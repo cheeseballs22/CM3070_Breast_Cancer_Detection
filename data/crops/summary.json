@@ -1,0 +1,25 @@
+{
+  "train": 2796,
+  "val": 127,
+  "test": 644,
+  "train_pathology": {
+    "malignant": 1146,
+    "benign": 1650
+  },
+  "val_pathology": {
+    "malignant": 54,
+    "benign": 73
+  },
+  "test_pathology": {
+    "malignant": 257,
+    "benign": 387
+  },
+  "train_patients": 1187,
+  "val_patients": 61,
+  "test_patients": 318,
+  "drops": {
+    "missing_crop": 1
+  },
+  "patch_size": 300,
+  "split_rule": "stage1_patient_membership"
+}

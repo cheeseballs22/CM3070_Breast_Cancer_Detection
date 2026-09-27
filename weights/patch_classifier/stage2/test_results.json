@@ -1,0 +1,36 @@
+{
+  "test_metrics": {
+    "accuracy": 0.697594501718213,
+    "precision": 0.572289156626506,
+    "sensitivity": 0.8482142857142857,
+    "f1": 0.6834532374100719,
+    "specificity": 0.6033519553072626,
+    "confusion_matrix": {
+      "tn": 108,
+      "fp": 71,
+      "fn": 17,
+      "tp": 95
+    },
+    "auc_roc": 0.8498603351955308
+  },
+  "tta_metrics": {
+    "accuracy": 0.7079037800687286,
+    "precision": 0.5828220858895705,
+    "sensitivity": 0.8482142857142857,
+    "f1": 0.6909090909090909,
+    "specificity": 0.6201117318435754,
+    "confusion_matrix": {
+      "tn": 111,
+      "fp": 68,
+      "fn": 17,
+      "tp": 95
+    },
+    "auc_roc": 0.8510075818036712
+  },
+  "n": 291,
+  "eval_loader": "jpeg",
+  "adopted_plain": 0.8221767757382282,
+  "adopted_tta": 0.8300578611332802,
+  "beats_adopted_tta": true,
+  "recommend_adopt": true
+}

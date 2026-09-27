@@ -1,0 +1,11 @@
+{
+  "n": 291,
+  "eval_loader": "jpeg",
+  "threshold": 0.5,
+  "patch_tta_auc": 0.8511572226656026,
+  "dc_tta_auc": 0.8300578611332802,
+  "archived_patch_tta": 0.8510075818036712,
+  "archived_dc_tta": 0.8300578611332802,
+  "patch_ckpt": "weights/patch_classifier/stage2/best_val.pt",
+  "dc_ckpt": "weights/direct_classifier/stage2/best_val.pt"
+}

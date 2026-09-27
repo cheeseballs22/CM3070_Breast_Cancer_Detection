@@ -1,0 +1,21 @@
+{
+  "train": 2674,
+  "val": 124,
+  "test": 689,
+  "dropped_total": 81,
+  "drop_reasons": {
+    "missing_mask": 81
+  },
+  "train_pathology": {
+    "malignant": 1111,
+    "benign": 1563
+  },
+  "val_pathology": {
+    "benign": 70,
+    "malignant": 54
+  },
+  "test_pathology": {
+    "malignant": 274,
+    "benign": 415
+  }
+}

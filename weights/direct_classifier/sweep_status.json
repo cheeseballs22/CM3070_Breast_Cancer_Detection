@@ -1,0 +1,25 @@
+{
+  "started_at": "2026-07-21 15:31:31",
+  "deadline_ts": 1784984420.8643315,
+  "completed": [
+    "s1_h_ctrl_p2_1e5",
+    "s1_h_p2_3e5",
+    "s1_h_p2_1e4",
+    "s1_h_p2_3e5_medaug",
+    "s1_h_long_p2_3e5",
+    "s1_h_p1_10_p2_3e5",
+    "s1_f_ctrl_p2_1e5",
+    "s1_f_p2_3e5",
+    "s1_f_p2_1e4_medaug",
+    "s2_from_s1_h_p2_3e5",
+    "s2_from_s1_f_p2_1e4_medaug"
+  ],
+  "failed": [],
+  "skipped": [],
+  "active": null,
+  "stage2_planned": [
+    "s1_h_p2_3e5",
+    "s1_f_p2_1e4_medaug"
+  ],
+  "start_ts": 1784662291.6872678
+}

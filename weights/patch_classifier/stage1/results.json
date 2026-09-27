@@ -1,0 +1,9 @@
+{
+  "arm_id": "s1_from_b",
+  "best_val_auc": 0.8878306878306879,
+  "stopped": false,
+  "n_history": 24,
+  "ckpt_phase": "phase2",
+  "ckpt_epoch": 12,
+  "init": "locate_anything/outputs/shared_twoview_classifier/stage0_patch_push/design_b/best_val.pt"
+}

@@ -1,0 +1,45 @@
+{
+  "arm_id": "s1_h_p2_3e5",
+  "last_epoch": {
+    "test_metrics": {
+      "accuracy": 0.7213352685050798,
+      "precision": 0.6752136752136753,
+      "sensitivity": 0.5766423357664233,
+      "f1": 0.6220472440944882,
+      "specificity": 0.8168674698795181,
+      "confusion_matrix": {
+        "tn": 339,
+        "fp": 76,
+        "fn": 116,
+        "tp": 158
+      },
+      "auc_roc": 0.8048720429161904
+    },
+    "checkpoint": "model.pt",
+    "ckpt_phase": null,
+    "ckpt_epoch": null
+  },
+  "best_val": {
+    "test_metrics": {
+      "accuracy": 0.7213352685050798,
+      "precision": 0.6752136752136753,
+      "sensitivity": 0.5766423357664233,
+      "f1": 0.6220472440944882,
+      "specificity": 0.8168674698795181,
+      "confusion_matrix": {
+        "tn": 339,
+        "fp": 76,
+        "fn": 116,
+        "tp": 158
+      },
+      "auc_roc": 0.8048720429161904
+    },
+    "checkpoint": "best_val.pt",
+    "ckpt_phase": "phase2",
+    "ckpt_epoch": 20
+  },
+  "archived_stage1_budget_auc": 0.8157,
+  "archived_stage2_budget_auc": 0.8099,
+  "archived_stage2_budget_tta_auc": 0.8103,
+  "global_best_val_auc": 0.8854497354497355
+}

@@ -1,0 +1,73 @@
+{
+  "arm_id": "s2_from_s1_h_p2_3e5",
+  "last_epoch": {
+    "test_metrics": {
+      "accuracy": 0.711340206185567,
+      "precision": 0.5958904109589042,
+      "sensitivity": 0.7767857142857143,
+      "f1": 0.6744186046511628,
+      "specificity": 0.6703910614525139,
+      "confusion_matrix": {
+        "tn": 120,
+        "fp": 59,
+        "fn": 25,
+        "tp": 87
+      },
+      "auc_roc": 0.7930466879489226
+    },
+    "tta_metrics": {
+      "accuracy": 0.7560137457044673,
+      "precision": 0.6375838926174496,
+      "sensitivity": 0.8482142857142857,
+      "f1": 0.7279693486590039,
+      "specificity": 0.6983240223463687,
+      "confusion_matrix": {
+        "tn": 125,
+        "fp": 54,
+        "fn": 17,
+        "tp": 95
+      },
+      "auc_roc": 0.8210794094173982
+    },
+    "checkpoint": "model.pt",
+    "ckpt_phase": null,
+    "ckpt_epoch": null
+  },
+  "best_val": {
+    "test_metrics": {
+      "accuracy": 0.7560137457044673,
+      "precision": 0.7157894736842105,
+      "sensitivity": 0.6071428571428571,
+      "f1": 0.6570048309178744,
+      "specificity": 0.8491620111731844,
+      "confusion_matrix": {
+        "tn": 152,
+        "fp": 27,
+        "fn": 44,
+        "tp": 68
+      },
+      "auc_roc": 0.8220770151636073
+    },
+    "tta_metrics": {
+      "accuracy": 0.7594501718213058,
+      "precision": 0.7142857142857143,
+      "sensitivity": 0.625,
+      "f1": 0.6666666666666666,
+      "specificity": 0.8435754189944135,
+      "confusion_matrix": {
+        "tn": 151,
+        "fp": 28,
+        "fn": 42,
+        "tp": 70
+      },
+      "auc_roc": 0.8300079808459697
+    },
+    "checkpoint": "best_val.pt",
+    "ckpt_phase": "phase1",
+    "ckpt_epoch": 3
+  },
+  "archived_stage1_budget_auc": 0.8157,
+  "archived_stage2_budget_auc": 0.8099,
+  "archived_stage2_budget_tta_auc": 0.8103,
+  "global_best_val_auc": 0.9866990846681923
+}

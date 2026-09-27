@@ -1,0 +1,143 @@
+{
+  "promoted_at": "2026-09-09T10:31:29Z",
+  "product": "patch-pretrained shared two-view EfficientNet-B3",
+  "source_root": "locate_anything/outputs/shared_twoview_classifier/stage0_patch_push",
+  "dest_root": "weights/patch_classifier",
+  "gate": {
+    "eval_loader": "jpeg",
+    "n": 291,
+    "dc_example_plain": 0.8221767757382282,
+    "dc_example_tta": 0.8300578611332802,
+    "first_fork_tta": 0.8405826017557861,
+    "product_plain": 0.8498603351955308,
+    "product_tta": 0.8510075818036712,
+    "winning_arm": "s2_from_b"
+  },
+  "direct_classifier_example": {
+    "role": "non-patch whole-image Direct Classifier (Petrini & Kim DC style)",
+    "s1": "weights/direct_classifier/stage1",
+    "s2": "weights/direct_classifier/stage2",
+    "s2_best_val": "weights/direct_classifier/stage2/best_val.pt",
+    "s2_best_val_sha256": "11b72d295104ce31d7c1518a0d0619d6a43aefae36b8d9caa59828f61819e5b6",
+    "jpeg_plain": 0.8221767757382282,
+    "jpeg_tta": 0.8300578611332802,
+    "overwritten": false
+  },
+  "copied": {
+    "design_b": [
+      {
+        "src": "locate_anything/outputs/shared_twoview_classifier/stage0_patch_push/design_b/best_val.pt",
+        "dst": "weights/patch_classifier/design_b/best_val.pt",
+        "bytes": 44923031,
+        "sha256": "cce8ff0511dc8791d91d752268a72ccb02d14a0c5ff3bea422450931d680379f",
+        "src_sha256": "cce8ff0511dc8791d91d752268a72ccb02d14a0c5ff3bea422450931d680379f"
+      },
+      {
+        "src": "locate_anything/outputs/shared_twoview_classifier/stage0_patch_push/design_b/last.pt",
+        "dst": "weights/patch_classifier/design_b/last.pt",
+        "bytes": 44921983,
+        "sha256": "7fc651b440dcce8082884cb26e6f40c7c8cd70aeb2c0f7e8cf6b958eaa63dfcc",
+        "src_sha256": "7fc651b440dcce8082884cb26e6f40c7c8cd70aeb2c0f7e8cf6b958eaa63dfcc"
+      },
+      {
+        "src": "locate_anything/outputs/shared_twoview_classifier/stage0_patch_push/design_b/history.jsonl",
+        "dst": "weights/patch_classifier/design_b/history.jsonl",
+        "bytes": 4604
+      },
+      {
+        "src": "locate_anything/outputs/shared_twoview_classifier/stage0_patch_push/design_b/results.json",
+        "dst": "weights/patch_classifier/design_b/results.json",
+        "bytes": 277
+      },
+      {
+        "src": "locate_anything/outputs/shared_twoview_classifier/stage0_patch_push/design_b/test_results.json",
+        "dst": "weights/patch_classifier/design_b/test_results.json",
+        "bytes": 335
+      },
+      {
+        "src": "locate_anything/outputs/shared_twoview_classifier/stage0_patch_push/design_b/arm_config.json",
+        "dst": "weights/patch_classifier/design_b/arm_config.json",
+        "bytes": 540
+      }
+    ],
+    "s1_from_b": [
+      {
+        "src": "locate_anything/outputs/shared_twoview_classifier/stage0_patch_push/s1_from_b/best_val.pt",
+        "dst": "weights/patch_classifier/stage1/best_val.pt",
+        "bytes": 44923159,
+        "sha256": "0511b46e78fb50a17fa9f926936e3a434dcfb674106ab62ec724f2993fe465b9",
+        "src_sha256": "0511b46e78fb50a17fa9f926936e3a434dcfb674106ab62ec724f2993fe465b9"
+      },
+      {
+        "src": "locate_anything/outputs/shared_twoview_classifier/stage0_patch_push/s1_from_b/last.pt",
+        "dst": "weights/patch_classifier/stage1/last.pt",
+        "bytes": 44920831,
+        "sha256": "015896f7f198cbcf184e5e5198328a2347ed335d009db624177d4bd4e579c803",
+        "src_sha256": "015896f7f198cbcf184e5e5198328a2347ed335d009db624177d4bd4e579c803"
+      },
+      {
+        "src": "locate_anything/outputs/shared_twoview_classifier/stage0_patch_push/s1_from_b/history.jsonl",
+        "dst": "weights/patch_classifier/stage1/history.jsonl",
+        "bytes": 7505
+      },
+      {
+        "src": "locate_anything/outputs/shared_twoview_classifier/stage0_patch_push/s1_from_b/results.json",
+        "dst": "weights/patch_classifier/stage1/results.json",
+        "bytes": 286
+      },
+      {
+        "src": "locate_anything/outputs/shared_twoview_classifier/stage0_patch_push/s1_from_b/test_results.json",
+        "dst": "weights/patch_classifier/stage1/test_results.json",
+        "bytes": 354
+      },
+      {
+        "src": "locate_anything/outputs/shared_twoview_classifier/stage0_patch_push/s1_from_b/arm_config.json",
+        "dst": "weights/patch_classifier/stage1/arm_config.json",
+        "bytes": 700
+      }
+    ],
+    "s2_from_b": [
+      {
+        "src": "locate_anything/outputs/shared_twoview_classifier/stage0_patch_push/s2_from_b/best_val.pt",
+        "dst": "weights/patch_classifier/stage2/best_val.pt",
+        "bytes": 235743107,
+        "sha256": "bcb8a0b49fe559600e4c082942acf201e96d383faa0c668010fa4faf39426961",
+        "src_sha256": "bcb8a0b49fe559600e4c082942acf201e96d383faa0c668010fa4faf39426961"
+      },
+      {
+        "src": "locate_anything/outputs/shared_twoview_classifier/stage0_patch_push/s2_from_b/last.pt",
+        "dst": "weights/patch_classifier/stage2/last.pt",
+        "bytes": 235742867,
+        "sha256": "2dac3a5cf7df78d668e2a27983479de8018406fad49d866c267c69971b3b15e7",
+        "src_sha256": "2dac3a5cf7df78d668e2a27983479de8018406fad49d866c267c69971b3b15e7"
+      },
+      {
+        "src": "locate_anything/outputs/shared_twoview_classifier/stage0_patch_push/s2_from_b/history.jsonl",
+        "dst": "weights/patch_classifier/stage2/history.jsonl",
+        "bytes": 6330
+      },
+      {
+        "src": "locate_anything/outputs/shared_twoview_classifier/stage0_patch_push/s2_from_b/results.json",
+        "dst": "weights/patch_classifier/stage2/results.json",
+        "bytes": 391
+      },
+      {
+        "src": "locate_anything/outputs/shared_twoview_classifier/stage0_patch_push/s2_from_b/test_results.json",
+        "dst": "weights/patch_classifier/stage2/test_results.json",
+        "bytes": 843
+      },
+      {
+        "src": "locate_anything/outputs/shared_twoview_classifier/stage0_patch_push/s2_from_b/arm_config.json",
+        "dst": "weights/patch_classifier/stage2/arm_config.json",
+        "bytes": 726
+      }
+    ]
+  },
+  "notes": [
+    "Copy-promote only. chollet_hp_sweep/s2_from_s1_h_p2_3e5 was not overwritten.",
+    "Live product loads adopted_patch/s2_from_b/best_val.pt.",
+    "Marked report freeze (0.830 JPEG TTA) is unchanged."
+  ],
+  "product_s2_best_val": "weights/patch_classifier/stage2/best_val.pt",
+  "product_s2_best_val_sha256": "bcb8a0b49fe559600e4c082942acf201e96d383faa0c668010fa4faf39426961"
+}

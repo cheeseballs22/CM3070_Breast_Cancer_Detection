@@ -1,0 +1,26 @@
+{
+  "train": {
+    "source_images": 2674,
+    "malignant": 1111,
+    "benign": 1563,
+    "expanded_n": 8022
+  },
+  "val": {
+    "source_images": 124,
+    "malignant": 54,
+    "benign": 70,
+    "expanded_n": 248
+  },
+  "test": {
+    "source_images": 689,
+    "malignant": 274,
+    "benign": 415,
+    "expanded_n": 1378
+  },
+  "classes": {
+    "0": "background",
+    "1": "benign_lesion",
+    "2": "malignant_lesion"
+  },
+  "window": 300
+}

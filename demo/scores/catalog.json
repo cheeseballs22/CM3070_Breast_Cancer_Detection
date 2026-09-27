@@ -1,0 +1,796 @@
+{
+  "meta": {
+    "title": "Comparison slice",
+    "dc_tta_auc": 0.8300578611332802,
+    "n_test": 291,
+    "threshold": 0.5,
+    "eval_loader": "jpeg",
+    "n_cases": 20,
+    "per_bucket_target": 5,
+    "shortfall": {
+      "both_right": 0,
+      "patch_only": 0,
+      "dc_only": 0,
+      "both_wrong": 0
+    },
+    "bucket_counts_full": {
+      "both_right": 177,
+      "patch_only": 29,
+      "dc_only": 44,
+      "both_wrong": 41
+    },
+    "caption_patch": "lesion box",
+    "caption_dc": "Grad-CAM",
+    "patch_ckpt": "weights/patch_classifier/stage2/best_val.pt",
+    "dc_ckpt": "weights/direct_classifier/stage2/best_val.pt",
+    "buckets": [
+      "both_right",
+      "patch_only",
+      "dc_only",
+      "both_wrong"
+    ],
+    "patch_tta_auc": 0.8511572226656026
+  },
+  "cases": [
+    {
+      "lesion_id": "P_01204_RIGHT_1",
+      "patient_id": "P_01204",
+      "breast": "RIGHT",
+      "abnormality_type": "mass",
+      "pathology": "malignant",
+      "y": 1,
+      "density": 1,
+      "subtlety_cc": 5,
+      "subtlety_mlo": 5,
+      "bucket": "both_right",
+      "p_patch_tta": 0.9999861121177673,
+      "p_dc_tta": 0.9999470114707947,
+      "patch_call": "malignant",
+      "dc_call": "malignant",
+      "design_b": {
+        "cc": {
+          "bg": 0.002983757760375738,
+          "benign": 0.0550001859664917,
+          "malignant": 0.942016065120697
+        },
+        "mlo": {
+          "bg": 0.001698034699074924,
+          "benign": 0.060762833803892136,
+          "malignant": 0.9375391602516174
+        }
+      },
+      "images": {
+        "cc_raw": "demo/cases/P_01204_RIGHT_1/cc_raw.png",
+        "mlo_raw": "demo/cases/P_01204_RIGHT_1/mlo_raw.png",
+        "cc_paint": "demo/cases/P_01204_RIGHT_1/cc_paint.png",
+        "mlo_paint": "demo/cases/P_01204_RIGHT_1/mlo_paint.png",
+        "cc_inset": "demo/cases/P_01204_RIGHT_1/cc_inset.png",
+        "mlo_inset": "demo/cases/P_01204_RIGHT_1/mlo_inset.png",
+        "cc_cam": "demo/cases/P_01204_RIGHT_1/cc_cam.png",
+        "mlo_cam": "demo/cases/P_01204_RIGHT_1/mlo_cam.png"
+      }
+    },
+    {
+      "lesion_id": "P_01294_RIGHT_1",
+      "patient_id": "P_01294",
+      "breast": "RIGHT",
+      "abnormality_type": "mass",
+      "pathology": "malignant",
+      "y": 1,
+      "density": 2,
+      "subtlety_cc": 5,
+      "subtlety_mlo": 5,
+      "bucket": "both_right",
+      "p_patch_tta": 0.999847412109375,
+      "p_dc_tta": 0.9999862313270569,
+      "patch_call": "malignant",
+      "dc_call": "malignant",
+      "design_b": {
+        "cc": {
+          "bg": 0.01474406011402607,
+          "benign": 0.0976516529917717,
+          "malignant": 0.887604296207428
+        },
+        "mlo": {
+          "bg": 0.0002330905554117635,
+          "benign": 0.036942172795534134,
+          "malignant": 0.9628246426582336
+        }
+      },
+      "images": {
+        "cc_raw": "demo/cases/P_01294_RIGHT_1/cc_raw.png",
+        "mlo_raw": "demo/cases/P_01294_RIGHT_1/mlo_raw.png",
+        "cc_paint": "demo/cases/P_01294_RIGHT_1/cc_paint.png",
+        "mlo_paint": "demo/cases/P_01294_RIGHT_1/mlo_paint.png",
+        "cc_inset": "demo/cases/P_01294_RIGHT_1/cc_inset.png",
+        "mlo_inset": "demo/cases/P_01294_RIGHT_1/mlo_inset.png",
+        "cc_cam": "demo/cases/P_01294_RIGHT_1/cc_cam.png",
+        "mlo_cam": "demo/cases/P_01294_RIGHT_1/mlo_cam.png"
+      }
+    },
+    {
+      "lesion_id": "P_00214_LEFT_1",
+      "patient_id": "P_00214",
+      "breast": "LEFT",
+      "abnormality_type": "calcification",
+      "pathology": "benign",
+      "y": 0,
+      "density": 1,
+      "subtlety_cc": 4,
+      "subtlety_mlo": 4,
+      "bucket": "both_right",
+      "p_patch_tta": 0.0001362948096357286,
+      "p_dc_tta": 2.7061181754106656e-05,
+      "patch_call": "benign",
+      "dc_call": "benign",
+      "design_b": {
+        "cc": {
+          "bg": 0.22769761085510254,
+          "benign": 0.7434262633323669,
+          "malignant": 0.02887607552111149
+        },
+        "mlo": {
+          "bg": 0.000516359054017812,
+          "benign": 0.9901735782623291,
+          "malignant": 0.009310019202530384
+        }
+      },
+      "images": {
+        "cc_raw": "demo/cases/P_00214_LEFT_1/cc_raw.png",
+        "mlo_raw": "demo/cases/P_00214_LEFT_1/mlo_raw.png",
+        "cc_paint": "demo/cases/P_00214_LEFT_1/cc_paint.png",
+        "mlo_paint": "demo/cases/P_00214_LEFT_1/mlo_paint.png",
+        "cc_inset": "demo/cases/P_00214_LEFT_1/cc_inset.png",
+        "mlo_inset": "demo/cases/P_00214_LEFT_1/mlo_inset.png",
+        "cc_cam": "demo/cases/P_00214_LEFT_1/cc_cam.png",
+        "mlo_cam": "demo/cases/P_00214_LEFT_1/mlo_cam.png"
+      }
+    },
+    {
+      "lesion_id": "P_01381_RIGHT_1",
+      "patient_id": "P_01381",
+      "breast": "RIGHT",
+      "abnormality_type": "mass",
+      "pathology": "benign",
+      "y": 0,
+      "density": 2,
+      "subtlety_cc": 5,
+      "subtlety_mlo": 5,
+      "bucket": "both_right",
+      "p_patch_tta": 0.0011048552114516497,
+      "p_dc_tta": 3.022072633029893e-05,
+      "patch_call": "benign",
+      "dc_call": "benign",
+      "design_b": {
+        "cc": {
+          "bg": 0.019789807498455048,
+          "benign": 0.7257383465766907,
+          "malignant": 0.2544718086719513
+        },
+        "mlo": {
+          "bg": 0.0005474596982821822,
+          "benign": 0.3486006557941437,
+          "malignant": 0.6508519053459167
+        }
+      },
+      "images": {
+        "cc_raw": "demo/cases/P_01381_RIGHT_1/cc_raw.png",
+        "mlo_raw": "demo/cases/P_01381_RIGHT_1/mlo_raw.png",
+        "cc_paint": "demo/cases/P_01381_RIGHT_1/cc_paint.png",
+        "mlo_paint": "demo/cases/P_01381_RIGHT_1/mlo_paint.png",
+        "cc_inset": "demo/cases/P_01381_RIGHT_1/cc_inset.png",
+        "mlo_inset": "demo/cases/P_01381_RIGHT_1/mlo_inset.png",
+        "cc_cam": "demo/cases/P_01381_RIGHT_1/cc_cam.png",
+        "mlo_cam": "demo/cases/P_01381_RIGHT_1/mlo_cam.png"
+      }
+    },
+    {
+      "lesion_id": "P_01643_RIGHT_1",
+      "patient_id": "P_01643",
+      "breast": "RIGHT",
+      "abnormality_type": "calcification",
+      "pathology": "benign",
+      "y": 0,
+      "density": 2,
+      "subtlety_cc": 5,
+      "subtlety_mlo": 5,
+      "bucket": "both_right",
+      "p_patch_tta": 0.0011725850636139512,
+      "p_dc_tta": 9.796925587579608e-05,
+      "patch_call": "benign",
+      "dc_call": "benign",
+      "design_b": {
+        "cc": {
+          "bg": 0.00020187301561236382,
+          "benign": 0.9937719702720642,
+          "malignant": 0.006026195362210274
+        },
+        "mlo": {
+          "bg": 6.313131598290056e-05,
+          "benign": 0.9932073950767517,
+          "malignant": 0.00672944588586688
+        }
+      },
+      "images": {
+        "cc_raw": "demo/cases/P_01643_RIGHT_1/cc_raw.png",
+        "mlo_raw": "demo/cases/P_01643_RIGHT_1/mlo_raw.png",
+        "cc_paint": "demo/cases/P_01643_RIGHT_1/cc_paint.png",
+        "mlo_paint": "demo/cases/P_01643_RIGHT_1/mlo_paint.png",
+        "cc_inset": "demo/cases/P_01643_RIGHT_1/cc_inset.png",
+        "mlo_inset": "demo/cases/P_01643_RIGHT_1/mlo_inset.png",
+        "cc_cam": "demo/cases/P_01643_RIGHT_1/cc_cam.png",
+        "mlo_cam": "demo/cases/P_01643_RIGHT_1/mlo_cam.png"
+      }
+    },
+    {
+      "lesion_id": "P_01419_LEFT_1",
+      "patient_id": "P_01419",
+      "breast": "LEFT",
+      "abnormality_type": "calcification",
+      "pathology": "malignant",
+      "y": 1,
+      "density": 3,
+      "subtlety_cc": 4,
+      "subtlety_mlo": 4,
+      "bucket": "patch_only",
+      "p_patch_tta": 0.9699476957321167,
+      "p_dc_tta": 0.10076017677783966,
+      "patch_call": "malignant",
+      "dc_call": "benign",
+      "design_b": {
+        "cc": {
+          "bg": 0.00032159601687453687,
+          "benign": 0.4535221457481384,
+          "malignant": 0.5461562275886536
+        },
+        "mlo": {
+          "bg": 8.728930697543547e-05,
+          "benign": 0.45096555352211,
+          "malignant": 0.5489472150802612
+        }
+      },
+      "images": {
+        "cc_raw": "demo/cases/P_01419_LEFT_1/cc_raw.png",
+        "mlo_raw": "demo/cases/P_01419_LEFT_1/mlo_raw.png",
+        "cc_paint": "demo/cases/P_01419_LEFT_1/cc_paint.png",
+        "mlo_paint": "demo/cases/P_01419_LEFT_1/mlo_paint.png",
+        "cc_inset": "demo/cases/P_01419_LEFT_1/cc_inset.png",
+        "mlo_inset": "demo/cases/P_01419_LEFT_1/mlo_inset.png",
+        "cc_cam": "demo/cases/P_01419_LEFT_1/cc_cam.png",
+        "mlo_cam": "demo/cases/P_01419_LEFT_1/mlo_cam.png"
+      }
+    },
+    {
+      "lesion_id": "P_02464_RIGHT_1",
+      "patient_id": "P_02464",
+      "breast": "RIGHT",
+      "abnormality_type": "calcification",
+      "pathology": "malignant",
+      "y": 1,
+      "density": 2,
+      "subtlety_cc": 4,
+      "subtlety_mlo": 4,
+      "bucket": "patch_only",
+      "p_patch_tta": 0.8470247983932495,
+      "p_dc_tta": 0.020582836121320724,
+      "patch_call": "malignant",
+      "dc_call": "benign",
+      "design_b": {
+        "cc": {
+          "bg": 0.002723828423768282,
+          "benign": 0.6371164917945862,
+          "malignant": 0.360159695148468
+        },
+        "mlo": {
+          "bg": 0.0005357118207029998,
+          "benign": 0.6668386459350586,
+          "malignant": 0.3326256275177002
+        }
+      },
+      "images": {
+        "cc_raw": "demo/cases/P_02464_RIGHT_1/cc_raw.png",
+        "mlo_raw": "demo/cases/P_02464_RIGHT_1/mlo_raw.png",
+        "cc_paint": "demo/cases/P_02464_RIGHT_1/cc_paint.png",
+        "mlo_paint": "demo/cases/P_02464_RIGHT_1/mlo_paint.png",
+        "cc_inset": "demo/cases/P_02464_RIGHT_1/cc_inset.png",
+        "mlo_inset": "demo/cases/P_02464_RIGHT_1/mlo_inset.png",
+        "cc_cam": "demo/cases/P_02464_RIGHT_1/cc_cam.png",
+        "mlo_cam": "demo/cases/P_02464_RIGHT_1/mlo_cam.png"
+      }
+    },
+    {
+      "lesion_id": "P_01277_RIGHT_1",
+      "patient_id": "P_01277",
+      "breast": "RIGHT",
+      "abnormality_type": "mass",
+      "pathology": "malignant",
+      "y": 1,
+      "density": 1,
+      "subtlety_cc": 4,
+      "subtlety_mlo": 4,
+      "bucket": "patch_only",
+      "p_patch_tta": 0.8589954972267151,
+      "p_dc_tta": 0.11378733813762665,
+      "patch_call": "malignant",
+      "dc_call": "benign",
+      "design_b": {
+        "cc": {
+          "bg": 0.002428343053907156,
+          "benign": 0.6089470982551575,
+          "malignant": 0.38862451910972595
+        },
+        "mlo": {
+          "bg": 0.09707534313201904,
+          "benign": 0.6143317818641663,
+          "malignant": 0.2885929048061371
+        }
+      },
+      "images": {
+        "cc_raw": "demo/cases/P_01277_RIGHT_1/cc_raw.png",
+        "mlo_raw": "demo/cases/P_01277_RIGHT_1/mlo_raw.png",
+        "cc_paint": "demo/cases/P_01277_RIGHT_1/cc_paint.png",
+        "mlo_paint": "demo/cases/P_01277_RIGHT_1/mlo_paint.png",
+        "cc_inset": "demo/cases/P_01277_RIGHT_1/cc_inset.png",
+        "mlo_inset": "demo/cases/P_01277_RIGHT_1/mlo_inset.png",
+        "cc_cam": "demo/cases/P_01277_RIGHT_1/cc_cam.png",
+        "mlo_cam": "demo/cases/P_01277_RIGHT_1/mlo_cam.png"
+      }
+    },
+    {
+      "lesion_id": "P_00649_LEFT_1",
+      "patient_id": "P_00649",
+      "breast": "LEFT",
+      "abnormality_type": "calcification",
+      "pathology": "benign",
+      "y": 0,
+      "density": 3,
+      "subtlety_cc": 1,
+      "subtlety_mlo": 1,
+      "bucket": "patch_only",
+      "p_patch_tta": 0.3955640196800232,
+      "p_dc_tta": 0.9608712196350098,
+      "patch_call": "benign",
+      "dc_call": "malignant",
+      "design_b": {
+        "cc": {
+          "bg": 0.031033042818307877,
+          "benign": 0.5672287940979004,
+          "malignant": 0.4017382264137268
+        },
+        "mlo": {
+          "bg": 0.004888487979769707,
+          "benign": 0.14343315362930298,
+          "malignant": 0.8516783714294434
+        }
+      },
+      "images": {
+        "cc_raw": "demo/cases/P_00649_LEFT_1/cc_raw.png",
+        "mlo_raw": "demo/cases/P_00649_LEFT_1/mlo_raw.png",
+        "cc_paint": "demo/cases/P_00649_LEFT_1/cc_paint.png",
+        "mlo_paint": "demo/cases/P_00649_LEFT_1/mlo_paint.png",
+        "cc_inset": "demo/cases/P_00649_LEFT_1/cc_inset.png",
+        "mlo_inset": "demo/cases/P_00649_LEFT_1/mlo_inset.png",
+        "cc_cam": "demo/cases/P_00649_LEFT_1/cc_cam.png",
+        "mlo_cam": "demo/cases/P_00649_LEFT_1/mlo_cam.png"
+      }
+    },
+    {
+      "lesion_id": "P_00278_RIGHT_1",
+      "patient_id": "P_00278",
+      "breast": "RIGHT",
+      "abnormality_type": "mass",
+      "pathology": "benign",
+      "y": 0,
+      "density": 2,
+      "subtlety_cc": 4,
+      "subtlety_mlo": 4,
+      "bucket": "patch_only",
+      "p_patch_tta": 0.35816076397895813,
+      "p_dc_tta": 0.6169989109039307,
+      "patch_call": "benign",
+      "dc_call": "malignant",
+      "design_b": {
+        "cc": {
+          "bg": 0.09769143909215927,
+          "benign": 0.05949607864022255,
+          "malignant": 0.8428124785423279
+        },
+        "mlo": {
+          "bg": 0.0006205404060892761,
+          "benign": 0.2507963180541992,
+          "malignant": 0.7485831379890442
+        }
+      },
+      "images": {
+        "cc_raw": "demo/cases/P_00278_RIGHT_1/cc_raw.png",
+        "mlo_raw": "demo/cases/P_00278_RIGHT_1/mlo_raw.png",
+        "cc_paint": "demo/cases/P_00278_RIGHT_1/cc_paint.png",
+        "mlo_paint": "demo/cases/P_00278_RIGHT_1/mlo_paint.png",
+        "cc_inset": "demo/cases/P_00278_RIGHT_1/cc_inset.png",
+        "mlo_inset": "demo/cases/P_00278_RIGHT_1/mlo_inset.png",
+        "cc_cam": "demo/cases/P_00278_RIGHT_1/cc_cam.png",
+        "mlo_cam": "demo/cases/P_00278_RIGHT_1/mlo_cam.png"
+      }
+    },
+    {
+      "lesion_id": "P_00662_LEFT_1",
+      "patient_id": "P_00662",
+      "breast": "LEFT",
+      "abnormality_type": "mass",
+      "pathology": "benign",
+      "y": 0,
+      "density": 2,
+      "subtlety_cc": 4,
+      "subtlety_mlo": 5,
+      "bucket": "dc_only",
+      "p_patch_tta": 0.8601991534233093,
+      "p_dc_tta": 0.002991934772580862,
+      "patch_call": "malignant",
+      "dc_call": "benign",
+      "design_b": {
+        "cc": {
+          "bg": 0.007591723930090666,
+          "benign": 0.4978686571121216,
+          "malignant": 0.49453961849212646
+        },
+        "mlo": {
+          "bg": 0.000555100676137954,
+          "benign": 0.0603572241961956,
+          "malignant": 0.9390876293182373
+        }
+      },
+      "images": {
+        "cc_raw": "demo/cases/P_00662_LEFT_1/cc_raw.png",
+        "mlo_raw": "demo/cases/P_00662_LEFT_1/mlo_raw.png",
+        "cc_paint": "demo/cases/P_00662_LEFT_1/cc_paint.png",
+        "mlo_paint": "demo/cases/P_00662_LEFT_1/mlo_paint.png",
+        "cc_inset": "demo/cases/P_00662_LEFT_1/cc_inset.png",
+        "mlo_inset": "demo/cases/P_00662_LEFT_1/mlo_inset.png",
+        "cc_cam": "demo/cases/P_00662_LEFT_1/cc_cam.png",
+        "mlo_cam": "demo/cases/P_00662_LEFT_1/mlo_cam.png"
+      }
+    },
+    {
+      "lesion_id": "P_01414_RIGHT_1",
+      "patient_id": "P_01414",
+      "breast": "RIGHT",
+      "abnormality_type": "calcification",
+      "pathology": "benign",
+      "y": 0,
+      "density": 4,
+      "subtlety_cc": 4,
+      "subtlety_mlo": 4,
+      "bucket": "dc_only",
+      "p_patch_tta": 0.908954918384552,
+      "p_dc_tta": 0.0552019402384758,
+      "patch_call": "malignant",
+      "dc_call": "benign",
+      "design_b": {
+        "cc": {
+          "bg": 0.6192231774330139,
+          "benign": 0.15926985442638397,
+          "malignant": 0.22150690853595734
+        },
+        "mlo": {
+          "bg": 0.004538974724709988,
+          "benign": 0.21123118698596954,
+          "malignant": 0.7842297554016113
+        }
+      },
+      "images": {
+        "cc_raw": "demo/cases/P_01414_RIGHT_1/cc_raw.png",
+        "mlo_raw": "demo/cases/P_01414_RIGHT_1/mlo_raw.png",
+        "cc_paint": "demo/cases/P_01414_RIGHT_1/cc_paint.png",
+        "mlo_paint": "demo/cases/P_01414_RIGHT_1/mlo_paint.png",
+        "cc_inset": "demo/cases/P_01414_RIGHT_1/cc_inset.png",
+        "mlo_inset": "demo/cases/P_01414_RIGHT_1/mlo_inset.png",
+        "cc_cam": "demo/cases/P_01414_RIGHT_1/cc_cam.png",
+        "mlo_cam": "demo/cases/P_01414_RIGHT_1/mlo_cam.png"
+      }
+    },
+    {
+      "lesion_id": "P_01795_LEFT_1",
+      "patient_id": "P_01795",
+      "breast": "LEFT",
+      "abnormality_type": "mass",
+      "pathology": "benign",
+      "y": 0,
+      "density": 3,
+      "subtlety_cc": 3,
+      "subtlety_mlo": 3,
+      "bucket": "dc_only",
+      "p_patch_tta": 0.8704744577407837,
+      "p_dc_tta": 0.07431504875421524,
+      "patch_call": "malignant",
+      "dc_call": "benign",
+      "design_b": {
+        "cc": {
+          "bg": 0.3747144043445587,
+          "benign": 0.4012492299079895,
+          "malignant": 0.22403639554977417
+        },
+        "mlo": {
+          "bg": 0.3636942505836487,
+          "benign": 0.46890929341316223,
+          "malignant": 0.16739650070667267
+        }
+      },
+      "images": {
+        "cc_raw": "demo/cases/P_01795_LEFT_1/cc_raw.png",
+        "mlo_raw": "demo/cases/P_01795_LEFT_1/mlo_raw.png",
+        "cc_paint": "demo/cases/P_01795_LEFT_1/cc_paint.png",
+        "mlo_paint": "demo/cases/P_01795_LEFT_1/mlo_paint.png",
+        "cc_inset": "demo/cases/P_01795_LEFT_1/cc_inset.png",
+        "mlo_inset": "demo/cases/P_01795_LEFT_1/mlo_inset.png",
+        "cc_cam": "demo/cases/P_01795_LEFT_1/cc_cam.png",
+        "mlo_cam": "demo/cases/P_01795_LEFT_1/mlo_cam.png"
+      }
+    },
+    {
+      "lesion_id": "P_01815_RIGHT_1",
+      "patient_id": "P_01815",
+      "breast": "RIGHT",
+      "abnormality_type": "mass",
+      "pathology": "malignant",
+      "y": 1,
+      "density": 3,
+      "subtlety_cc": 1,
+      "subtlety_mlo": 2,
+      "bucket": "dc_only",
+      "p_patch_tta": 0.45334184169769287,
+      "p_dc_tta": 0.5298805236816406,
+      "patch_call": "benign",
+      "dc_call": "malignant",
+      "design_b": {
+        "cc": {
+          "bg": 0.006718969438225031,
+          "benign": 0.7149261236190796,
+          "malignant": 0.2783548831939697
+        },
+        "mlo": {
+          "bg": 0.0016225078143179417,
+          "benign": 0.5079271793365479,
+          "malignant": 0.49045035243034363
+        }
+      },
+      "images": {
+        "cc_raw": "demo/cases/P_01815_RIGHT_1/cc_raw.png",
+        "mlo_raw": "demo/cases/P_01815_RIGHT_1/mlo_raw.png",
+        "cc_paint": "demo/cases/P_01815_RIGHT_1/cc_paint.png",
+        "mlo_paint": "demo/cases/P_01815_RIGHT_1/mlo_paint.png",
+        "cc_inset": "demo/cases/P_01815_RIGHT_1/cc_inset.png",
+        "mlo_inset": "demo/cases/P_01815_RIGHT_1/mlo_inset.png",
+        "cc_cam": "demo/cases/P_01815_RIGHT_1/cc_cam.png",
+        "mlo_cam": "demo/cases/P_01815_RIGHT_1/mlo_cam.png"
+      }
+    },
+    {
+      "lesion_id": "P_00922_RIGHT_1",
+      "patient_id": "P_00922",
+      "breast": "RIGHT",
+      "abnormality_type": "mass",
+      "pathology": "benign",
+      "y": 0,
+      "density": 3,
+      "subtlety_cc": 4,
+      "subtlety_mlo": 4,
+      "bucket": "dc_only",
+      "p_patch_tta": 0.9536758661270142,
+      "p_dc_tta": 0.1622661054134369,
+      "patch_call": "malignant",
+      "dc_call": "benign",
+      "design_b": {
+        "cc": {
+          "bg": 9.308076550951228e-05,
+          "benign": 0.32555192708969116,
+          "malignant": 0.6743549704551697
+        },
+        "mlo": {
+          "bg": 0.001572862733155489,
+          "benign": 0.637527585029602,
+          "malignant": 0.36089950799942017
+        }
+      },
+      "images": {
+        "cc_raw": "demo/cases/P_00922_RIGHT_1/cc_raw.png",
+        "mlo_raw": "demo/cases/P_00922_RIGHT_1/mlo_raw.png",
+        "cc_paint": "demo/cases/P_00922_RIGHT_1/cc_paint.png",
+        "mlo_paint": "demo/cases/P_00922_RIGHT_1/mlo_paint.png",
+        "cc_inset": "demo/cases/P_00922_RIGHT_1/cc_inset.png",
+        "mlo_inset": "demo/cases/P_00922_RIGHT_1/mlo_inset.png",
+        "cc_cam": "demo/cases/P_00922_RIGHT_1/cc_cam.png",
+        "mlo_cam": "demo/cases/P_00922_RIGHT_1/mlo_cam.png"
+      }
+    },
+    {
+      "lesion_id": "P_01635_RIGHT_2",
+      "patient_id": "P_01635",
+      "breast": "RIGHT",
+      "abnormality_type": "calcification",
+      "pathology": "malignant",
+      "y": 1,
+      "density": 2,
+      "subtlety_cc": 3,
+      "subtlety_mlo": 3,
+      "bucket": "both_wrong",
+      "p_patch_tta": 0.03297745808959007,
+      "p_dc_tta": 0.0007360618910752237,
+      "patch_call": "benign",
+      "dc_call": "benign",
+      "design_b": {
+        "cc": {
+          "bg": 0.17687171697616577,
+          "benign": 0.6361885666847229,
+          "malignant": 0.18693970143795013
+        },
+        "mlo": {
+          "bg": 0.6362316608428955,
+          "benign": 0.1863555610179901,
+          "malignant": 0.17741279304027557
+        }
+      },
+      "images": {
+        "cc_raw": "demo/cases/P_01635_RIGHT_2/cc_raw.png",
+        "mlo_raw": "demo/cases/P_01635_RIGHT_2/mlo_raw.png",
+        "cc_paint": "demo/cases/P_01635_RIGHT_2/cc_paint.png",
+        "mlo_paint": "demo/cases/P_01635_RIGHT_2/mlo_paint.png",
+        "cc_inset": "demo/cases/P_01635_RIGHT_2/cc_inset.png",
+        "mlo_inset": "demo/cases/P_01635_RIGHT_2/mlo_inset.png",
+        "cc_cam": "demo/cases/P_01635_RIGHT_2/cc_cam.png",
+        "mlo_cam": "demo/cases/P_01635_RIGHT_2/mlo_cam.png"
+      }
+    },
+    {
+      "lesion_id": "P_00969_LEFT_1",
+      "patient_id": "P_00969",
+      "breast": "LEFT",
+      "abnormality_type": "mass",
+      "pathology": "benign",
+      "y": 0,
+      "density": 3,
+      "subtlety_cc": 3,
+      "subtlety_mlo": 3,
+      "bucket": "both_wrong",
+      "p_patch_tta": 0.9964263439178467,
+      "p_dc_tta": 0.952144980430603,
+      "patch_call": "malignant",
+      "dc_call": "malignant",
+      "design_b": {
+        "cc": {
+          "bg": 0.0008909378084354103,
+          "benign": 0.1453346461057663,
+          "malignant": 0.85377436876297
+        },
+        "mlo": {
+          "bg": 0.007902862504124641,
+          "benign": 0.3864729404449463,
+          "malignant": 0.6056241989135742
+        }
+      },
+      "images": {
+        "cc_raw": "demo/cases/P_00969_LEFT_1/cc_raw.png",
+        "mlo_raw": "demo/cases/P_00969_LEFT_1/mlo_raw.png",
+        "cc_paint": "demo/cases/P_00969_LEFT_1/cc_paint.png",
+        "mlo_paint": "demo/cases/P_00969_LEFT_1/mlo_paint.png",
+        "cc_inset": "demo/cases/P_00969_LEFT_1/cc_inset.png",
+        "mlo_inset": "demo/cases/P_00969_LEFT_1/mlo_inset.png",
+        "cc_cam": "demo/cases/P_00969_LEFT_1/cc_cam.png",
+        "mlo_cam": "demo/cases/P_00969_LEFT_1/mlo_cam.png"
+      }
+    },
+    {
+      "lesion_id": "P_00494_RIGHT_1",
+      "patient_id": "P_00494",
+      "breast": "RIGHT",
+      "abnormality_type": "mass",
+      "pathology": "benign",
+      "y": 0,
+      "density": 2,
+      "subtlety_cc": 5,
+      "subtlety_mlo": 5,
+      "bucket": "both_wrong",
+      "p_patch_tta": 0.9997265338897705,
+      "p_dc_tta": 0.9279214143753052,
+      "patch_call": "malignant",
+      "dc_call": "malignant",
+      "design_b": {
+        "cc": {
+          "bg": 0.0012784572318196297,
+          "benign": 0.03713962808251381,
+          "malignant": 0.9615819454193115
+        },
+        "mlo": {
+          "bg": 0.0019662282429635525,
+          "benign": 0.17259079217910767,
+          "malignant": 0.8254429697990417
+        }
+      },
+      "images": {
+        "cc_raw": "demo/cases/P_00494_RIGHT_1/cc_raw.png",
+        "mlo_raw": "demo/cases/P_00494_RIGHT_1/mlo_raw.png",
+        "cc_paint": "demo/cases/P_00494_RIGHT_1/cc_paint.png",
+        "mlo_paint": "demo/cases/P_00494_RIGHT_1/mlo_paint.png",
+        "cc_inset": "demo/cases/P_00494_RIGHT_1/cc_inset.png",
+        "mlo_inset": "demo/cases/P_00494_RIGHT_1/mlo_inset.png",
+        "cc_cam": "demo/cases/P_00494_RIGHT_1/cc_cam.png",
+        "mlo_cam": "demo/cases/P_00494_RIGHT_1/mlo_cam.png"
+      }
+    },
+    {
+      "lesion_id": "P_02139_LEFT_1",
+      "patient_id": "P_02139",
+      "breast": "LEFT",
+      "abnormality_type": "calcification",
+      "pathology": "malignant",
+      "y": 1,
+      "density": 2,
+      "subtlety_cc": 3,
+      "subtlety_mlo": 3,
+      "bucket": "both_wrong",
+      "p_patch_tta": 0.08863456547260284,
+      "p_dc_tta": 0.027970515191555023,
+      "patch_call": "benign",
+      "dc_call": "benign",
+      "design_b": {
+        "cc": {
+          "bg": 0.0162886381149292,
+          "benign": 0.5482838749885559,
+          "malignant": 0.43542754650115967
+        },
+        "mlo": {
+          "bg": 0.003938453271985054,
+          "benign": 0.649699866771698,
+          "malignant": 0.3463616669178009
+        }
+      },
+      "images": {
+        "cc_raw": "demo/cases/P_02139_LEFT_1/cc_raw.png",
+        "mlo_raw": "demo/cases/P_02139_LEFT_1/mlo_raw.png",
+        "cc_paint": "demo/cases/P_02139_LEFT_1/cc_paint.png",
+        "mlo_paint": "demo/cases/P_02139_LEFT_1/mlo_paint.png",
+        "cc_inset": "demo/cases/P_02139_LEFT_1/cc_inset.png",
+        "mlo_inset": "demo/cases/P_02139_LEFT_1/mlo_inset.png",
+        "cc_cam": "demo/cases/P_02139_LEFT_1/cc_cam.png",
+        "mlo_cam": "demo/cases/P_02139_LEFT_1/mlo_cam.png"
+      }
+    },
+    {
+      "lesion_id": "P_02498_RIGHT_1",
+      "patient_id": "P_02498",
+      "breast": "RIGHT",
+      "abnormality_type": "calcification",
+      "pathology": "benign",
+      "y": 0,
+      "density": 4,
+      "subtlety_cc": 3,
+      "subtlety_mlo": 3,
+      "bucket": "both_wrong",
+      "p_patch_tta": 0.9785484075546265,
+      "p_dc_tta": 0.897147536277771,
+      "patch_call": "malignant",
+      "dc_call": "malignant",
+      "design_b": {
+        "cc": {
+          "bg": 0.011062540113925934,
+          "benign": 0.29363927245140076,
+          "malignant": 0.6952981948852539
+        },
+        "mlo": {
+          "bg": 0.008008613251149654,
+          "benign": 0.171596497297287,
+          "malignant": 0.8203948736190796
+        }
+      },
+      "images": {
+        "cc_raw": "demo/cases/P_02498_RIGHT_1/cc_raw.png",
+        "mlo_raw": "demo/cases/P_02498_RIGHT_1/mlo_raw.png",
+        "cc_paint": "demo/cases/P_02498_RIGHT_1/cc_paint.png",
+        "mlo_paint": "demo/cases/P_02498_RIGHT_1/mlo_paint.png",
+        "cc_inset": "demo/cases/P_02498_RIGHT_1/cc_inset.png",
+        "mlo_inset": "demo/cases/P_02498_RIGHT_1/mlo_inset.png",
+        "cc_cam": "demo/cases/P_02498_RIGHT_1/cc_cam.png",
+        "mlo_cam": "demo/cases/P_02498_RIGHT_1/mlo_cam.png"
+      }
+    }
+  ]
+}

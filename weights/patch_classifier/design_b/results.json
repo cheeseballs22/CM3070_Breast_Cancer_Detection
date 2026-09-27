@@ -1,0 +1,15 @@
+{
+  "arm_id": "design_b",
+  "best_val": 0.8626984126984126,
+  "stopped": false,
+  "n_history": 15,
+  "class_counts": {
+    "bg": 5348,
+    "benign": 3126,
+    "malignant": 2222
+  },
+  "ckpt_phase": "phase2",
+  "ckpt_epoch": 3,
+  "init": "orig_design_b",
+  "multiscale": true
+}

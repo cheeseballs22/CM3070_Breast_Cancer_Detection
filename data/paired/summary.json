@@ -1,0 +1,22 @@
+{
+  "train": 1099,
+  "val": 122,
+  "test": 291,
+  "dropped_total": 538,
+  "drop_reasons": {
+    "single_view_dropped": 532,
+    "inconsistent_pathology": 6
+  },
+  "train_pathology": {
+    "malignant": 456,
+    "benign": 643
+  },
+  "val_pathology": {
+    "malignant": 46,
+    "benign": 76
+  },
+  "test_pathology": {
+    "malignant": 112,
+    "benign": 179
+  }
+}
