@@ -42,4 +42,4 @@ hf download ruiner/CM3070_Breast_Cancer_Detection --local-dir weights
 
 ## What is not in this copy
 
-The CBIS-DDSM JPEG pack (`cbis-ddsm/`) stays on the machine where the notebooks were run. The checkpoint files (`best_val.pt`) are on Hugging Face, linked above. The JSON files under `weights/` are the saved metrics. The notebook figures and the demo case pictures are in this repo. Opening `notebooks/comparison_slice_demo.ipynb` draws the figures from `demo/` and `notebooks/figures/` and does not need the checkpoints or the JPEGs.
+The CBIS-DDSM JPEG pack (`cbis-ddsm/`) stays on the machine where the notebooks were run. The checkpoint files (`best_val.pt`) are on Hugging Face, linked above. The JSON files under `weights/` are the saved metrics. The notebook figures and the demo case pictures are in this repo. Opening `notebooks/comparison_slice_demo.ipynb` draws the figures from `demo/` and `notebooks/figures/` and does not need the checkpoints or the JPEGs. Dataset available at https://www.kaggle.com/datasets/awsaf49/cbis-ddsm-breast-cancer-image-dataset
